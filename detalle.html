@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/detalle.css">
+    <link rel="stylesheet" href="css/styles2.css">
 </head>
 <body>
 
@@ -47,7 +48,7 @@
                 <span class="exp-level exp-level--5">NIVEL 3 ●●●</span>
             </div>
             <h1 class="det-hero__title">Expedición<br>Fitz Roy:<br>El granito<br>patagónico.</h1>
-            <p class="det-hero__sub">Ascenso técnico de alta exigencia en el corazón del Parque Nacional Los Glaciares.</p>
+            <p class="det-hero__sub">Ascenso técnico de alta exigencia en el corazón del Parque Nacional Los Glaciares ubicado en el sudoeste de la provincia de Santa Cruz.</p>
             <div class="det-hero__stats">
                 <div class="det-stat">
                     <span class="det-stat__val">5 DÍAS</span>
@@ -175,7 +176,7 @@
                 <div class="det-admission__box">
                     <p class="det-admission__text">"El acceso a esta expedición está sujeto a una entrevista técnica. Evaluaremos tu historial de ascensos y tu capacidad de resolución ante situaciones de estrés en terreno técnico."</p>
                     <p class="det-admission__text">"Si tu objetivo es únicamente obtener una foto, este programa no es para vos. Si tu objetivo es aprender a moverte en la alta montaña con autonomía, tu lugar está acá."</p>
-                    <a href="contacto.html" class="btn btn--primary det-admission__cta">Solicitar entrevista de admisión técnica →</a>
+                    <a href="contacto.html" class="btn btn--primary det-admission__cta">Participar en esta expedición →</a>
                 </div>
             </div>
         </div>
@@ -183,57 +184,73 @@
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="footer__top">
-            <div class="footer__headline">
-                <h2>No dejes que la montaña<br>te tome por sorpresa.</h2>
+        <div class="footer__body">
+            <!-- Col 1: Brand -->
+            <div class="footer__brand-col">
+                <a href="index.html" class="footer__logo">
+                    <svg viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:26px;height:19px;display:inline-block;vertical-align:middle;margin-right:0.4rem;">
+                        <polyline points="0,18 8,4 14,12 19,2 28,18" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+                    </svg>
+                    CÚSPIDES<span class="nav__brand-accent">.</span>
+                </a>
+                <p class="footer__tagline">Alta montaña con método. Patagonia, Andes y más allá.</p>
+                <div class="footer__socials">
+                    <a href="#" aria-label="Instagram">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="4"/><polygon points="10,9 16,12 10,15" fill="currentColor" stroke="none"/></svg>
+                    </a>
+                    <a href="#" aria-label="Facebook">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                </div>
             </div>
-            <div class="footer__cta-block">
-                <a href="contacto.html" class="btn btn--primary">Contactar Guías ↗</a>
-                <p class="footer__email">📩 info@cuspidesexpediciones.com</p>
-            </div>
-        </div>
-        <div class="footer__grid">
-            <div class="footer__col">
-                <h4>Expediciones</h4>
-                <ul>
-                    <li><a href="#">Fitz Roy Técnico</a></li>
+
+            <!-- Col 2: Expediciones -->
+            <div class="footer__nav-col">
+                <h4 class="footer__col-title">Expediciones</h4>
+                <ul class="footer__links">
+                    <li><a href="detalle.html">Fitz Roy Técnico</a></li>
                     <li><a href="#">Hielo Continental</a></li>
                     <li><a href="#">Macizo Paine</a></li>
+                    <li><a href="#">Ojos del Salado</a></li>
                 </ul>
             </div>
-            <div class="footer__col">
-                <h4>Escuela</h4>
-                <ul>
-                    <li><a href="#">Primeros Auxilios WFR</a></li>
-                    <li><a href="#">Rescate en Grietas</a></li>
-                    <li><a href="#">Escuela de Guías</a></li>
+
+            <!-- Col 3: Empresa -->
+            <div class="footer__nav-col">
+                <h4 class="footer__col-title">Empresa</h4>
+                <ul class="footer__links">
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Equipo de guías</a></li>
+                    <li><a href="#">Seguridad &amp; Protocolos</a></li>
+                    <li><a href="#">Prensa &amp; Media</a></li>
                 </ul>
             </div>
-            <div class="footer__col">
-                <h4>Seguridad</h4>
-                <ul>
-                    <li><a href="#">Protocolo Satelital</a></li>
-                    <li><a href="#">Evacuación Médica</a></li>
-                    <li><a href="#">Seguros de Altura</a></li>
+
+            <!-- Col 4: Contacto -->
+            <div class="footer__contact-col">
+                <h4 class="footer__col-title">Contacto</h4>
+                <ul class="footer__contact-list">
+                    <li>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        El Chaltén, Santa Cruz, Argentina
+                    </li>
+                    <li>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.44 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 6 6l.92-.9a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        +54 9 2966 000-000
+                    </li>
+                    <li>
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        info@cuspidesexpediciones.com
+                    </li>
                 </ul>
             </div>
-            <div class="footer__col">
-                <h4>Comunidad</h4>
-                <ul>
-                    <li><a href="#">Testimonios</a></li>
-                    <li><a href="#">Preguntas Frecuentes</a></li>
-                    <li><a href="#">Prensa Kit</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer__socials">
-            <a href="#" class="social-icon">🔗 LinkedIn</a>
-            <a href="#" class="social-icon">📸 Instagram</a>
-            <a href="#" class="social-icon">❌ X (Twitter)</a>
         </div>
         <div class="footer__bottom">
-            <p>© 2026 Cúspides Montaña & Expediciones. Cátedra Belluccia FADU.</p>
-            <p><a href="#" class="footer__link">Cookies Policy</a></p>
+            <p>© 2026 Cúspides Montaña &amp; Expediciones. Cátedra Belluccia FADU.</p>
+            <a href="#" class="footer__link">Cookies Policy</a>
         </div>
     </footer>
 

@@ -71,7 +71,34 @@
         }, 3800);
     }
 
-    // 6. ParalaX en la Galería Masonry
+    // 6. Count-up animation en Stats Strip
+    const statsStrip = document.querySelector(".stats-strip");
+    if (statsStrip) {
+        const statsObserver = new IntersectionObserver(entries => {
+            entries.forEach(en => {
+                if (!en.isIntersecting) return;
+                statsObserver.unobserve(en.target);
+                en.target.querySelectorAll(".stat-item__num[data-count-to]").forEach(el => {
+                    const target = parseInt(el.dataset.countTo, 10);
+                    const suffix = el.dataset.suffix || "";
+                    const duration = 1600;
+                    const startTime = performance.now();
+                    el.textContent = "0" + suffix;
+                    const step = (now) => {
+                        const elapsed = now - startTime;
+                        const progress = Math.min(elapsed / duration, 1);
+                        const eased = 1 - Math.pow(1 - progress, 3);
+                        el.textContent = Math.round(target * eased) + suffix;
+                        if (progress < 1) requestAnimationFrame(step);
+                    };
+                    requestAnimationFrame(step);
+                });
+            });
+        }, { threshold: 0.4 });
+        statsObserver.observe(statsStrip);
+    }
+
+    // 7. ParalaX en la Galería Masonry
     const items = document.querySelectorAll(".mg__item");
     if (items.length > 0) {
         window.addEventListener("scroll", () => {

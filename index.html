@@ -5,22 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cúspides — Montaña & Expediciones</title>
     <meta name="description" content="Alpinismo de compromiso en la Patagonia extrema. Preparación física y mental para montañistas exigentes.">
-    
-    <!-- Google Fonts oficiales de la cátedra -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Outfit:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- Vinculo al CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles2.css">
 </head>
 <body>
 
-    <!-- Efectos visuales de fondo -->
     <div class="spotlight" aria-hidden="true"></div>
     <div class="grain" aria-hidden="true"></div>
 
-    <!-- 🗺️ NAV (Barra de Navegación) -->
+    <!-- NAV -->
     <header class="nav" id="nav">
         <a href="#hero" class="nav__brand">
             <svg class="nav__logo-icon" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -29,9 +25,9 @@
             CÚSPIDES<span class="nav__brand-accent">.</span>
         </a>
         <nav class="nav__links">
-            <a href="#experiencia">Expediciones</a>
-            <a href="#servicios">Programas</a>
-            <a href="#proceso">Método</a>
+            <a href="#experiencias">Expediciones</a>
+            <a href="#equipo">Equipo</a>
+            <a href="#seguridad">Método</a>
             <a href="#galeria">Galería</a>
         </nav>
         <button class="nav__hamburger" aria-label="Abrir menú" aria-expanded="false">
@@ -39,122 +35,174 @@
         </button>
     </header>
 
-<!-- ⛰️ Portada Principal (Hero) -->
-<section class="hero" id="hero">
-    <div class="hero__bg"></div>
-    
-<div class="hero__content">
-    <p class="hero__eyebrow" style="color: var(--pink);">ACADEMIA DE MONTAÑA PATAGÓNICA</p>
-    
-    <!-- Título en 2 líneas contundentes -->
-    <h1 class="hero__title">ALPINISMO DE<br>COMPROMISO</h1>
-    
-    <!-- Nueva bajada con sentido de marca -->
-    <p class="hero__sub">Formación técnica y mental para quienes ven<br>la montaña como un destino, no un paseo.</p>
-    
-    <div class="hero__actions">
-        <!-- El botón ahora es más protagonista -->
-        <a href="contacto.html" class="btn btn--primary" data-modal style="background: var(--pink); border-radius: 4px;">Comenzá tu preparación →</a>
-    </div>
-</div>
-</section>
-
-    <!-- 📹 EXPERIENCIA (Video Sticky de Filosofía) -->
-<section class="section experience reveal" id="experiencia">
-    <div class="experience__text-side">
-        <p class="eyebrow">FILOSOFÍA DE COMPROMISO</p>
-        <h2 class="section__title">La preparación para la cumbre no admite atajos.</h2>
-        
-        <p class="experience__text" style="margin-top: 1.5rem; margin-bottom: 2rem;">
-            Cúspides diseña montañistas. No vendemos experiencias superficiales — trabajamos la resistencia física, la lectura de terreno y el control emocional necesario cuando la montaña se pone difícil.
-        </p>
-        
-        <a href="detalle.html" class="btn btn--primary" style="margin-top: 2rem;">Leer nuestro método</a>
-    </div>
-
-    <div class="experience__visual-side">
-        <div class="experience__sky-bleed"></div>
-        <video autoplay muted loop playsinline>
-            <source src="assets/alpin.mp4" type="video/mp4">
-        </video>
-    </div>
-</section>
-
-
-<!-- 🧭 EQUIPO -->
-<section class="section team" id="equipo">
-    <div class="section__head reveal">
-        <p class="eyebrow">Nuestro equipo</p>
-        <h2 class="section__title">Instructores de <em class="hi">montaña</em></h2>
-        <p class="section__lead">
-            Instructores certificados con años de experiencia real en rescate, primeros auxilios y expediciones técnicas en los terrenos más hostiles.
-        </p>
-    </div>
-
-    <div class="team__grid reveal">
-        <!-- Card 1 -->
-        <article class="member-card">
-            <div class="member__top" style="background-image: url('assets/action-a.jpg');"></div>
-            <div class="member__bottom">
-                <div class="member__avatar"><img src="assets/perfil.avif" alt="Nombre"></div>
-                <h3>TOMAS MOSQUEDA</h3>
-                <p class="member__role">Instructor Técnico</p>
-                <span class="member__tag">Argentina</span>
+    <!-- HERO — centrado, sin eyebrow -->
+    <section class="hero" id="hero">
+        <div class="hero__bg"></div>
+        <div class="hero__content">
+            <h1 class="hero__title">ALPINISMO DE<br>COMPROMISO</h1>
+            <p class="hero__sub">Formación técnica y mental para quienes ven la montaña como un destino, no un paseo.</p>
+            <div class="hero__actions">
+                <a href="contacto.html" class="btn btn--primary">Comenzá tu preparación →</a>
             </div>
-        </article>
+        </div>
+    </section>
 
-        <!-- Card 2 -->
-        <article class="member-card">
-            <div class="member__top" style="background-image: url('assets/action-b.jpg');"></div>
-            <div class="member__bottom">
-                <div class="member__avatar"><img src="assets/perfil2.avif" alt="Nombre"></div>
-                <h3>KARINELLY SALAS</h3>
-                <p class="member__role">Especialista en Hielo</p>
-                <span class="member__tag">Chile</span>
+    <!-- STATS STRIP — count-up via JS al entrar al viewport -->
+    <div class="stats-strip">
+        <div class="stats-strip__inner">
+            <div class="stat-item">
+                <span class="stat-item__num" data-count-to="12" data-suffix="+">12+</span>
+                <span class="stat-item__label">Años en la Patagonia</span>
             </div>
-        </article>
-
-        <!-- Card 3 -->
-        <article class="member-card">
-            <div class="member__top" style="background-image: url('assets/action-c.jpg');"></div>
-            <div class="member__bottom">
-                <div class="member__avatar"><img src="assets/perfil4.jpg" alt="Nombre"></div>
-                <h3>DIEGO VALBUENA</h3>
-                <p class="member__role">Rescate Agreste</p>
-                <span class="member__tag">Argentina</span>
+            <div class="stat-item">
+                <span class="stat-item__num" data-count-to="3">3</span>
+                <span class="stat-item__label">Expediciones técnicas</span>
             </div>
-        </article>
-
-        <!-- Card 4 -->
-        <article class="member-card">
-            <div class="member__top" style="background-image: url('assets/action-d.jpg');"></div>
-            <div class="member__bottom">
-                <div class="member__avatar"><img src="assets/perfil3.jpg" alt="Nombre"></div>
-                <h3>MATILDA WEBER</h3>
-                <p class="member__role">Médica de Expedición</p>
-                <span class="member__tag">Chile</span>
+            <div class="stat-item">
+                <span class="stat-item__num" data-count-to="97" data-suffix="%">97%</span>
+                <span class="stat-item__label">Tasa de cumbre</span>
             </div>
-        </article>
+            <div class="stat-item">
+                <span class="stat-item__num">1:2</span>
+                <span class="stat-item__label">Ratio guía / montañista</span>
+            </div>
+        </div>
     </div>
-</section>
 
-    <!-- 🏔️ EXPERIENCIAS (Cards con dificultad) -->
+    <!-- FILOSOFÍA -->
+    <section class="section experience reveal" id="experiencia">
+        <div class="experience__text-side">
+            <p class="eyebrow">Filosofía de compromiso</p>
+            <h2 class="section__title">La preparación<br>no admite atajos.</h2>
+            <p class="experience__text" style="margin-top: 1.5rem; margin-bottom: 2rem;">
+                Cúspides diseña montañistas. No vendemos experiencias superficiales — trabajamos la resistencia física, la lectura de terreno y el control emocional que la montaña exige.
+            </p>
+            <a href="detalle.html" class="btn btn--primary">Leer nuestro método</a>
+        </div>
+        <div class="experience__visual-side">
+            <div class="experience__sky-bleed"></div>
+            <video autoplay muted loop playsinline>
+                <source src="assets/section1.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
+
+    <!-- EQUIPO — full-bleed, 4 cols que llenan el ancho -->
+    <section class="team" id="equipo">
+        <div class="section__head reveal">
+            <p class="eyebrow">Nuestro equipo</p>
+            <h2 class="section__title">Instructores de <em class="hi">montaña.</em></h2>
+            <p class="section__lead">Certificados con experiencia real en rescate, primeros auxilios y expediciones técnicas en los terrenos más hostiles del mundo.</p>
+        </div>
+        <div class="team__grid reveal">
+
+            <article class="member-card">
+                <div class="member-card__inner">
+                    <div class="member-card__front" style="background-image: url('assets/action-a.jpg')">
+                        <span class="member__chip"><span class="member__chip-star">★</span> Argentina</span>
+                        <div class="member__front-info">
+                            <h3 class="member__name">Tomás Mosqueda</h3>
+                            <p class="member__role">Instructor Técnico</p>
+                        </div>
+                    </div>
+                    <div class="member-card__back">
+                        <p class="member__back-quote">"La montaña te devuelve exactamente lo que le das. Nada más, nada menos."</p>
+                        <div class="member__ficha">
+                            <div class="member__ficha-row"><span>Experiencia</span><strong>14 años</strong></div>
+                            <div class="member__ficha-row"><span>Certificación</span><strong>UIAGM</strong></div>
+                            <div class="member__ficha-row"><span>Especialidad</span><strong>Roca y mixto</strong></div>
+                            <div class="member__ficha-row"><span>Base</span><strong>El Chaltén, AR</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="member-card">
+                <div class="member-card__inner">
+                    <div class="member-card__front" style="background-image: url('assets/action-b.jpg')">
+                        <span class="member__chip"><span class="member__chip-star">★</span> Chile</span>
+                        <div class="member__front-info">
+                            <h3 class="member__name">Karinelly Salas</h3>
+                            <p class="member__role">Especialista en Hielo</p>
+                        </div>
+                    </div>
+                    <div class="member-card__back">
+                        <p class="member__back-quote">"El hielo no perdona la improvisación. Por eso entrenamos como si la tormenta ya estuviera aquí."</p>
+                        <div class="member__ficha">
+                            <div class="member__ficha-row"><span>Experiencia</span><strong>10 años</strong></div>
+                            <div class="member__ficha-row"><span>Certificación</span><strong>UIAGM + WFR</strong></div>
+                            <div class="member__ficha-row"><span>Especialidad</span><strong>Glaciología</strong></div>
+                            <div class="member__ficha-row"><span>Base</span><strong>Torres del Paine, CL</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="member-card">
+                <div class="member-card__inner">
+                    <div class="member-card__front" style="background-image: url('assets/action-c.jpg')">
+                        <span class="member__chip"><span class="member__chip-star">★</span> Argentina</span>
+                        <div class="member__front-info">
+                            <h3 class="member__name">Diego Valbuena</h3>
+                            <p class="member__role">Rescate Agreste</p>
+                        </div>
+                    </div>
+                    <div class="member-card__back">
+                        <p class="member__back-quote">"El rescate empieza antes de salir: en la planificación y en la selección del equipo."</p>
+                        <div class="member__ficha">
+                            <div class="member__ficha-row"><span>Experiencia</span><strong>12 años</strong></div>
+                            <div class="member__ficha-row"><span>Certificación</span><strong>WFR + SAR</strong></div>
+                            <div class="member__ficha-row"><span>Especialidad</span><strong>Rescate en grietas</strong></div>
+                            <div class="member__ficha-row"><span>Base</span><strong>Bariloche, AR</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <article class="member-card">
+                <div class="member-card__inner">
+                    <div class="member-card__front" style="background-image: url('assets/action-d.jpg')">
+                        <span class="member__chip"><span class="member__chip-star">★</span> Chile</span>
+                        <div class="member__front-info">
+                            <h3 class="member__name">Matilda Weber</h3>
+                            <p class="member__role">Médica de Expedición</p>
+                        </div>
+                    </div>
+                    <div class="member-card__back">
+                        <p class="member__back-quote">"La medicina de montaña no es tratar emergencias. Es evitar que ocurran."</p>
+                        <div class="member__ficha">
+                            <div class="member__ficha-row"><span>Experiencia</span><strong>8 años</strong></div>
+                            <div class="member__ficha-row"><span>Certificación</span><strong>MD + WFR</strong></div>
+                            <div class="member__ficha-row"><span>Especialidad</span><strong>Medicina de expedición</strong></div>
+                            <div class="member__ficha-row"><span>Base</span><strong>Puerto Natales, CL</strong></div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- PHOTO BREAK -->
+    <div class="photo-break">
+        <img src="assets/corte-section1.jpg" alt="Glaciar Perito Moreno" loading="lazy">
+        <span class="photo-break__caption"></span>
+    </div>
+
+    <!-- EXPEDICIONES -->
     <section class="expeditions" id="experiencias">
         <div class="section__head reveal">
-            <p class="eyebrow">Expediciones de Alta Exigencia</p>
+            <p class="eyebrow">Expediciones de alta exigencia</p>
             <h2 class="section__title">Destinos que exigen preparación <em class="hi">real.</em></h2>
             <p class="section__lead">No son paquetes. Son expediciones técnicas con requisitos de formación y selección por aptitud.</p>
         </div>
-
         <div class="exp-grid reveal">
-
-            <!-- Card 1 -->
             <article class="exp-card" style="--bg: url('../assets/fitz-a.jpg')">
                 <div class="exp-card__bg"></div>
                 <div class="exp-card__overlay"></div>
                 <div class="exp-card__content">
                     <div class="exp-card__header">
-                        <span class="exp-level exp-level--5">NIVEL 3 ●●●</span>
+                        <span class="exp-level exp-level--5">NIVEL 3</span>
                     </div>
                     <div class="exp-card__body">
                         <h3 class="exp-card__title">FITZ ROY</h3>
@@ -163,19 +211,17 @@
                             <div class="exp-stat"><span class="exp-stat__val">14 DÍAS</span><span class="exp-stat__label">Duración</span></div>
                             <div class="exp-stat"><span class="exp-stat__val">ÉLITE</span><span class="exp-stat__label">Clase</span></div>
                         </div>
-                        <p class="exp-card__desc">Arista sur del Fitz Roy. Requiere dominio en escalada en roca, mixto y nieve compacta. La cumbre más técnica de la Patagonia.</p>
+                        <p class="exp-card__desc">Arista sur del Fitz Roy. Requiere dominio en roca, mixto y nieve compacta.</p>
                         <a href="detalle.html" class="btn btn--primary exp-card__cta">Ver programa →</a>
                     </div>
                 </div>
             </article>
-
-            <!-- Card 2 -->
             <article class="exp-card" style="--bg: url('../assets/hielo.jpg')">
                 <div class="exp-card__bg"></div>
                 <div class="exp-card__overlay"></div>
                 <div class="exp-card__content">
                     <div class="exp-card__header">
-                        <span class="exp-level exp-level--4">NIVEL 2 ●●○</span>
+                        <span class="exp-level exp-level--4">NIVEL 2</span>
                     </div>
                     <div class="exp-card__body">
                         <h3 class="exp-card__title">ESCALADA EN HIELO</h3>
@@ -184,19 +230,17 @@
                             <div class="exp-stat"><span class="exp-stat__val">7 DÍAS</span><span class="exp-stat__label">Duración</span></div>
                             <div class="exp-stat"><span class="exp-stat__val">AVANZADO</span><span class="exp-stat__label">Clase</span></div>
                         </div>
-                        <p class="exp-card__desc">Técnicas de piolet, crampones y progresión en cascadas heladas. Terreno glaciar en la Cordillera del Viento.</p>
+                        <p class="exp-card__desc">Piolet, crampones y progresión en cascadas heladas. Glaciar en la Cordillera del Viento.</p>
                         <a href="detalle.html" class="btn btn--primary exp-card__cta">Ver programa →</a>
                     </div>
                 </div>
             </article>
-
-            <!-- Card 3 -->
-            <article class="exp-card" style="--bg: url('../assets/travesia.jpg')">
+            <article class="exp-card" style="--bg: url('../assets/invernal.jpg')">
                 <div class="exp-card__bg"></div>
                 <div class="exp-card__overlay"></div>
                 <div class="exp-card__content">
                     <div class="exp-card__header">
-                        <span class="exp-level exp-level--3">NIVEL 1 ●○○</span>
+                        <span class="exp-level exp-level--3">NIVEL 1</span>
                     </div>
                     <div class="exp-card__body">
                         <h3 class="exp-card__title">TRAVESÍA INVERNAL</h3>
@@ -205,65 +249,114 @@
                             <div class="exp-stat"><span class="exp-stat__val">5 DÍAS</span><span class="exp-stat__label">Duración</span></div>
                             <div class="exp-stat"><span class="exp-stat__val">INTERMEDIO</span><span class="exp-stat__label">Clase</span></div>
                         </div>
-                        <p class="exp-card__desc">Autonomía total en vivac invernal. Navegación nocturna, raciones de emergencia y gestión del frío extremo en la Precordillera.</p>
+                        <p class="exp-card__desc">Autonomía total en vivac invernal. Navegación nocturna y gestión del frío extremo.</p>
                         <a href="detalle.html" class="btn btn--primary exp-card__cta">Ver programa →</a>
                     </div>
                 </div>
             </article>
-
-
         </div>
     </section>
 
-    <!-- 🔒 SEGURIDAD -->
+    <!-- SEGURIDAD — flip cards, head alineado izquierda -->
     <section class="security" id="seguridad">
-
         <div class="section__head reveal">
             <p class="eyebrow">Protocolo Cúspides</p>
-            <h2 class="section__title">Si el terreno falla, el <em class="hi">protocolo no</em></h2>
-            <p class="section__lead">La seguridad no es un ítem del folleto. Es la estructura completa detrás de cada decisión que tomamos antes, durante y después de cada expedición.</p>
+            <h2 class="section__title">Si el terreno falla,<br>el <em class="hi">protocolo no.</em></h2>
+            <p class="section__lead">La seguridad es la estructura detrás de cada decisión antes, durante y después de cada expedición.</p>
         </div>
-
         <div class="proto-grid reveal">
+
             <article class="proto-card">
-                <span class="proto-icon">⬡</span>
-                <h3 class="proto-name">Certificación UIAGM</h3>
-                <p class="proto-desc">El único estándar internacional que la Patagonia acepta.</p>
+                <div class="proto-card__inner">
+                    <div class="proto-card__front">
+                        <span class="proto-icon">⬡</span>
+                        <h3 class="proto-name">Certificación UIAGM</h3>
+                        <p class="proto-desc">El único estándar internacional que la Patagonia acepta.</p>
+                    </div>
+                    <div class="proto-card__back">
+                        <p class="proto-card__back-label">¿Qué significa?</p>
+                        <p class="proto-card__back-text">Union Internationale des Associations de Guides de Montagne. Solo 3.800 guías en el mundo la poseen. Cúspides no certifica con menos.</p>
+                    </div>
+                </div>
             </article>
+
             <article class="proto-card">
-                <span class="proto-icon">◉</span>
-                <h3 class="proto-name">Seguimiento Satelital</h3>
-                <p class="proto-desc">Posición en tiempo real vía Garmin inReach. Sin zonas ciegas.</p>
+                <div class="proto-card__inner">
+                    <div class="proto-card__front">
+                        <span class="proto-icon">◉</span>
+                        <h3 class="proto-name">Seguimiento satelital</h3>
+                        <p class="proto-desc">Posición en tiempo real vía Garmin inReach. Sin zonas ciegas.</p>
+                    </div>
+                    <div class="proto-card__back">
+                        <p class="proto-card__back-label">El dispositivo</p>
+                        <p class="proto-card__back-text">Garmin inReach Mini 2. Actualización cada 10 minutos. El equipo de base recibe tu posición durante toda la expedición, sin importar la cobertura.</p>
+                    </div>
+                </div>
             </article>
+
             <article class="proto-card">
-                <span class="proto-icon">△</span>
-                <h3 class="proto-name">Decisión de Retorno</h3>
-                <p class="proto-desc">El protocolo de regreso se define antes de partir, no en la cumbre.</p>
+                <div class="proto-card__inner">
+                    <div class="proto-card__front">
+                        <span class="proto-icon">△</span>
+                        <h3 class="proto-name">Decisión de retorno</h3>
+                        <p class="proto-desc">El protocolo de regreso se define antes de partir, no en la cumbre.</p>
+                    </div>
+                    <div class="proto-card__back">
+                        <p class="proto-card__back-label">Cómo funciona</p>
+                        <p class="proto-card__back-text">Definimos puntos de no retorno con altitudes, horarios y condiciones climáticas máximas antes de salir. Si la montaña no acompaña, volvemos. Sin discusión.</p>
+                    </div>
+                </div>
             </article>
+
             <article class="proto-card">
-                <span class="proto-icon">◻</span>
-                <h3 class="proto-name">Material Homologado UIAA</h3>
-                <p class="proto-desc">Cuerdas, arneses y hardware con certificación técnica vigente.</p>
+                <div class="proto-card__inner">
+                    <div class="proto-card__front">
+                        <span class="proto-icon">◻</span>
+                        <h3 class="proto-name">Material UIAA homologado</h3>
+                        <p class="proto-desc">Cuerdas, arneses y hardware con certificación técnica vigente.</p>
+                    </div>
+                    <div class="proto-card__back">
+                        <p class="proto-card__back-label">El estándar</p>
+                        <p class="proto-card__back-text">Todo el material es inspeccionado antes de cada expedición y reemplazado al primer signo de deterioro. No usamos equipo de temporadas anteriores sin revisión.</p>
+                    </div>
+                </div>
             </article>
+
             <article class="proto-card">
-                <span class="proto-icon">✦</span>
-                <h3 class="proto-name">WFR Siempre Presente</h3>
-                <p class="proto-desc">Cada expedición sale con al menos un guía WFR certificado.</p>
+                <div class="proto-card__inner">
+                    <div class="proto-card__front">
+                        <span class="proto-icon">✦</span>
+                        <h3 class="proto-name">WFR en cada salida</h3>
+                        <p class="proto-desc">Cada expedición sale con al menos un guía WFR certificado.</p>
+                    </div>
+                    <div class="proto-card__back">
+                        <p class="proto-card__back-label">La formación</p>
+                        <p class="proto-card__back-text">Wilderness First Responder: 70+ horas en emergencias en terreno remoto sin acceso hospitalario. Es el mínimo que Cúspides exige, no el máximo que entrena.</p>
+                    </div>
+                </div>
             </article>
+
             <article class="proto-card">
-                <span class="proto-icon">◬</span>
-                <h3 class="proto-name">Admisión Técnica Previa</h3>
-                <p class="proto-desc">No cualquiera sube con nosotros. La selección es parte del protocolo.</p>
+                <div class="proto-card__inner">
+                    <div class="proto-card__front">
+                        <span class="proto-icon">◬</span>
+                        <h3 class="proto-name">Admisión técnica previa</h3>
+                        <p class="proto-desc">No cualquiera sube con nosotros. La selección es parte del protocolo.</p>
+                    </div>
+                    <div class="proto-card__back">
+                        <p class="proto-card__back-label">El proceso</p>
+                        <p class="proto-card__back-text">Entrevista individual, revisión de historial de ascensos y evaluación física. No es un filtro de marketing: si no estás listo, te lo decimos directamente.</p>
+                    </div>
+                </div>
             </article>
+
         </div>
-
-
     </section>
 
-        <!-- 📷 GALERÍA (Mosaico Masonry) -->
+    <!-- GALERÍA — dentro de la grilla estándar -->
     <section class="gallery" id="galeria">
         <div class="section__head reveal">
-            <p class="eyebrow">La Inmensidad Real</p>
+            <p class="eyebrow">La inmensidad real</p>
             <h2 class="section__title">Registros de lo <em class="hi">implacable.</em></h2>
         </div>
         <div class="masonry-gallery reveal">
@@ -276,105 +369,132 @@
         </div>
     </section>
 
-        <!-- 💡 PROPUESTA / IDEA (Lista Destacada) -->
+    <!-- RESEÑAS -->
     <section class="section testimonials" id="resenas">
         <div class="section__head reveal">
-            <p class="eyebrow">Lo que dicen los que subieron</p>
-            <h2 class="section__title">Ellos ya estuvieron <em class="hi">allá arriba.</em></h2>
-            <p class="section__lead">Cada reseña es de alguien que pasó por nuestra admisión, completó el programa y llegó donde quería llegar. Sin filtros.</p>
+            <p class="eyebrow">Lo que dicen los que lo vivieron</p>
+            <h2 class="section__title">La montaña no miente.<br><em class="hi">Ellos tampoco.</em></h2>
         </div>
 
-        <div class="review-carousel reveal">
-
-            <blockquote class="review-card">
-                <div class="review-card__top">
-                    <div class="review-card__author">
-                        <div class="review-card__avatar">MD</div>
-                        <div>
-                            <p class="review-card__name">Marcos D.</p>
-                            <span class="review-card__tag">Expedición Fitz Roy · 2024</span>
-                        </div>
+        <div class="featured-review reveal">
+            <div class="featured-review__img">
+                <img src="assets/gale5.jpg" alt="Expedición Fitz Roy 2024" loading="lazy">
+            </div>
+            <div class="featured-review__content">
+                <div class="featured-review__mark">"</div>
+                <p class="featured-review__text">Nunca pensé que iba a llegar tan preparado a la base del Fitz Roy. La admisión técnica me pareció una exigencia innecesaria, hasta que vi la montaña de frente.</p>
+                <div class="featured-review__stars">★★★★★</div>
+                <div class="featured-review__author">
+                    <div class="featured-review__avatar">MD</div>
+                    <div>
+                        <p class="featured-review__name">Marcos D.</p>
+                        <span class="featured-review__tag">Expedición Fitz Roy · 2024</span>
                     </div>
-                    <div class="review-card__stars">★★★★★</div>
                 </div>
-                <p class="review-card__text">"Nunca pensé que iba a llegar tan preparado a la base del Fitz Roy. La admisión técnica me pareció una exigencia innecesaria, hasta que vi la montaña de frente."</p>
-            </blockquote>
+            </div>
+        </div>
 
-            <blockquote class="review-card">
-                <div class="review-card__top">
-                    <div class="review-card__author">
-                        <div class="review-card__avatar">VC</div>
-                        <div>
-                            <p class="review-card__name">Valentina C.</p>
-                            <span class="review-card__tag">WFR Agreste · 2024</span>
+        <div class="review-marquee reveal">
+            <div class="review-marquee__track">
+                <blockquote class="review-card">
+                    <div class="review-card__top">
+                        <div class="review-card__author">
+                            <div class="review-card__avatar">VC</div>
+                            <div><p class="review-card__name">Valentina C.</p><span class="review-card__tag">WFR Agreste · 2024</span></div>
                         </div>
+                        <div class="review-card__stars">★★★★★</div>
                     </div>
-                    <div class="review-card__stars">★★★★★</div>
-                </div>
-                <p class="review-card__text">"El curso WFR me salvó la vida, literalmente. Tuve que aplicar lo aprendido en campo antes de bajar. No es un curso de fin de semana."</p>
-            </blockquote>
-
-            <blockquote class="review-card">
-                <div class="review-card__top">
-                    <div class="review-card__author">
-                        <div class="review-card__avatar">RA</div>
-                        <div>
-                            <p class="review-card__name">Rodrigo A.</p>
-                            <span class="review-card__tag">Escalada en Hielo · 2025</span>
+                    <p class="review-card__text">"El curso WFR me salvó la vida, literalmente. Tuve que aplicar lo aprendido en campo antes de bajar."</p>
+                </blockquote>
+                <blockquote class="review-card">
+                    <div class="review-card__top">
+                        <div class="review-card__author">
+                            <div class="review-card__avatar">RA</div>
+                            <div><p class="review-card__name">Rodrigo A.</p><span class="review-card__tag">Escalada en Hielo · 2025</span></div>
                         </div>
+                        <div class="review-card__stars">★★★★★</div>
                     </div>
-                    <div class="review-card__stars">★★★★★</div>
-                </div>
-                <p class="review-card__text">"Vine de Santiago buscando algo serio. Encontré una academia que te trata como un alpinista adulto, no como un turista que paga por una foto."</p>
-            </blockquote>
-
-            <blockquote class="review-card">
-                <div class="review-card__top">
-                    <div class="review-card__author">
-                        <div class="review-card__avatar">LM</div>
-                        <div>
-                            <p class="review-card__name">Luciana M.</p>
-                            <span class="review-card__tag">Travesía Invernal · 2025</span>
+                    <p class="review-card__text">"Vine de Santiago buscando algo serio. Encontré una academia que te trata como un alpinista adulto, no como un turista."</p>
+                </blockquote>
+                <blockquote class="review-card">
+                    <div class="review-card__top">
+                        <div class="review-card__author">
+                            <div class="review-card__avatar">LM</div>
+                            <div><p class="review-card__name">Luciana M.</p><span class="review-card__tag">Travesía Invernal · 2025</span></div>
                         </div>
+                        <div class="review-card__stars">★★★★★</div>
                     </div>
-                    <div class="review-card__stars">★★★★★</div>
-                </div>
-                <p class="review-card__text">"La travesía invernal fue la experiencia más exigente y más honesta de mi vida. Salí con herramientas que no imaginaba que existían."</p>
-            </blockquote>
-
-            <blockquote class="review-card">
-                <div class="review-card__top">
-                    <div class="review-card__author">
-                        <div class="review-card__avatar">FO</div>
-                        <div>
-                            <p class="review-card__name">Federico O.</p>
-                            <span class="review-card__tag">Expedición Fitz Roy · 2025</span>
+                    <p class="review-card__text">"La travesía invernal fue la experiencia más exigente y más honesta de mi vida. Salí con herramientas que no imaginaba."</p>
+                </blockquote>
+                <blockquote class="review-card">
+                    <div class="review-card__top">
+                        <div class="review-card__author">
+                            <div class="review-card__avatar">FO</div>
+                            <div><p class="review-card__name">Federico O.</p><span class="review-card__tag">Expedición Fitz Roy · 2025</span></div>
                         </div>
+                        <div class="review-card__stars">★★★★★</div>
                     </div>
-                    <div class="review-card__stars">★★★★★</div>
-                </div>
-                <p class="review-card__text">"La admisión fue dura. El programa fue más duro todavía. Pero el día que pisé la cumbre entendí para qué era todo. No hay otra academia que te prepare así."</p>
-            </blockquote>
-
+                    <p class="review-card__text">"La admisión fue dura. El programa fue más duro. El día que pisé la cumbre entendí para qué era todo."</p>
+                </blockquote>
+                <!-- Duplicado para loop sin corte -->
+                <blockquote class="review-card">
+                    <div class="review-card__top">
+                        <div class="review-card__author">
+                            <div class="review-card__avatar">VC</div>
+                            <div><p class="review-card__name">Valentina C.</p><span class="review-card__tag">WFR Agreste · 2024</span></div>
+                        </div>
+                        <div class="review-card__stars">★★★★★</div>
+                    </div>
+                    <p class="review-card__text">"El curso WFR me salvó la vida, literalmente. Tuve que aplicar lo aprendido en campo antes de bajar."</p>
+                </blockquote>
+                <blockquote class="review-card">
+                    <div class="review-card__top">
+                        <div class="review-card__author">
+                            <div class="review-card__avatar">RA</div>
+                            <div><p class="review-card__name">Rodrigo A.</p><span class="review-card__tag">Escalada en Hielo · 2025</span></div>
+                        </div>
+                        <div class="review-card__stars">★★★★★</div>
+                    </div>
+                    <p class="review-card__text">"Vine de Santiago buscando algo serio. Encontré una academia que te trata como un alpinista adulto, no como un turista."</p>
+                </blockquote>
+                <blockquote class="review-card">
+                    <div class="review-card__top">
+                        <div class="review-card__author">
+                            <div class="review-card__avatar">LM</div>
+                            <div><p class="review-card__name">Luciana M.</p><span class="review-card__tag">Travesía Invernal · 2025</span></div>
+                        </div>
+                        <div class="review-card__stars">★★★★★</div>
+                    </div>
+                    <p class="review-card__text">"La travesía invernal fue la experiencia más exigente y más honesta de mi vida. Salí con herramientas que no imaginaba."</p>
+                </blockquote>
+                <blockquote class="review-card">
+                    <div class="review-card__top">
+                        <div class="review-card__author">
+                            <div class="review-card__avatar">FO</div>
+                            <div><p class="review-card__name">Federico O.</p><span class="review-card__tag">Expedición Fitz Roy · 2025</span></div>
+                        </div>
+                        <div class="review-card__stars">★★★★★</div>
+                    </div>
+                    <p class="review-card__text">"La admisión fue dura. El programa fue más duro. El día que pisé la cumbre entendí para qué era todo."</p>
+                </blockquote>
+            </div>
         </div>
     </section>
 
-    <!-- 🎓 ESCUELA DE GUÍAS 2027 -->
+    <!-- ESCUELA DE GUÍAS -->
     <section class="school" id="escuela">
         <div class="school__inner reveal">
-
             <div class="school__left">
-                <p class="school__eyebrow">— PRÓXIMAMENTE</p>
+                <p class="school__eyebrow">— Próximamente</p>
                 <h2 class="school__title">Escuela<br>de Guías</h2>
                 <p class="school__year">2027</p>
-                <p class="school__desc">El programa de formación profesional más exigente de la Patagonia. Para quienes ya llegaron a la cima y quieren llevar a otros. Veinte plazas por cohorte. No hay lista de espera — hay preparación.</p>
+                <p class="school__desc">El programa de formación profesional más exigente de la Patagonia. Para quienes ya llegaron a la cima y quieren llevar a otros. Veinte plazas por cohorte.</p>
                 <ul class="school__modules">
                     <li><span class="school__module-code">GR·01</span>Rescate en grietas glaciares</li>
                     <li><span class="school__module-code">PA·02</span>Primeros auxilios WFR avanzado</li>
                     <li><span class="school__module-code">RM·03</span>Gestión de riesgo en montaña</li>
                 </ul>
             </div>
-
             <div class="school__right">
                 <div class="school__form-box">
                     <p class="school__form-label">Inscripciones abren enero 2027</p>
@@ -387,113 +507,104 @@
                     <p class="school__disclaimer">Sin spam. Solo una notificación cuando abran los cupos.</p>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <!-- 🛑 PROBLEMA (Mar de Iguales) — comentado para reutilizar
-    <section class="section section--center problem reveal" id="problema">
-        <div class="section__head reveal">
-            <p class="eyebrow">La Realidad del Turismo</p>
-            <h2 class="section__title">Todos te venden la misma cumbre de cotillón.</h2>
-        </div>
-        <div class="sea reveal" aria-hidden="true" id="sea"></div>
-        <p class="problem__text reveal">
-            El mercado está saturado de agencias que te prometen una foto rápida para el feed, sin importar si estás preparado para lo que viene. Eso no es aventura; es irresponsabilidad. En la alta montaña, la improvisación se paga caro. Podés seguir siendo un turista más en el montón, o podés aceptar una preparación que <strong>nadie más en el mundo</strong> te va a exigir.
-        </p>
-    </section>
-    -->
-
-    <!-- 📑 PROCESO (Método de 4 Pasos) — comentado para reutilizar
-    <section class="section section--center" id="proceso">
-        <div class="section__head reveal">
-            <p class="eyebrow">El Método Cúspides</p>
-            <h2 class="section__title">La cumbre no admite atajos.</h2>
-        </div>
-        <ol class="steps reveal">
-            <li class="step">
-                <span class="step__num">01</span>
-                <h3>Admisión Técnica</h3>
-                <p>Evaluamos tu estado físico, historial médico y resistencia psicológica inicial antes de marchar.</p>
-            </li>
-            <li class="step">
-                <span class="step__num">02</span>
-                <h3>Fase de Resistencia</h3>
-                <p>Meses de entrenamiento de carga y simulación de fatiga en terrenos controlados.</p>
-            </li>
-            <li class="step">
-                <span class="step__num">03</span>
-                <h3>Gestión de Riesgo</h3>
-                <p>Clases teóricas y prácticas de autorrescate, nudos avanzados y lectura de glaciares.</p>
-            </li>
-            <li class="step">
-                <span class="step__num">04</span>
-                <h3>Expedición Autónoma</h3>
-                <p>Ingresamos a la Patagonia cruda. Ya no sos un turista; sos un montañista consecuente.</p>
-            </li>
-        </ol>
-    </section>
-    -->
-
-
-
-
-    <!-- 🗺️ NUEVO FOOTER COMPLETO (Inspirado en image_93413e.png) -->
+    <!-- FOOTER — rediseño con columnas + íconos -->
     <footer class="footer">
-        <div class="footer__top">
-            <div class="footer__headline">
-                <h2>No dejes que la montaña<br>te tome por sorpresa.</h2>
-            </div>
-            <div class="footer__cta-block">
-                <a href="contacto.html" class="btn btn--primary" data-modal>Contactar Guías ↗</a>
-                <p class="footer__email">📩 info@cuspidesexpediciones.com</p>
-            </div>
-        </div>
+        <div class="footer__body">
 
-        <div class="footer__grid">
+            <!-- Col 1: marca + descripción + redes -->
+            <div class="footer__brand-col">
+                <p class="footer__logo">
+                    <svg class="footer__logo-icon" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <polyline points="0,18 8,4 14,12 19,2 28,18" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+                    </svg>
+                    CÚSPIDES<span class="footer__logo-accent">.</span>
+                </p>
+                <p class="footer__tagline">Expediciones de alta montaña<br>certificadas por ISAGM.</p>
+                <div class="footer__social-row">
+                    <a href="#" class="footer__social-btn" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <circle cx="12" cy="12" r="4"/>
+                            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-btn" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5 6.5a2.7 2.7 0 0 0-1.9-1.9C18.9 4.2 12 4.2 12 4.2s-6.9 0-8.6.4a2.7 2.7 0 0 0-1.9 1.9C1.2 8.2 1.2 12 1.2 12s0 3.8.3 5.5a2.7 2.7 0 0 0 1.9 1.9c1.7.4 8.6.4 8.6.4s6.9 0 8.6-.4a2.7 2.7 0 0 0 1.9-1.9c.3-1.7.3-5.5.3-5.5s0-3.8-.3-5.5z"/>
+                            <polygon points="9.75,15.5 15.5,12 9.75,8.5" fill="currentColor" stroke="none"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="footer__social-btn" aria-label="Email">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="2" y="4" width="20" height="16" rx="2"/>
+                            <polyline points="2,4 12,13 22,4"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Col 2: expediciones -->
             <div class="footer__col">
                 <h4>Expediciones</h4>
                 <ul>
                     <li><a href="#">Fitz Roy Técnico</a></li>
-                    <li><a href="#">Hielo Continental</a></li>
-                    <li><a href="#">Macizo Paine</a></li>
+                    <li><a href="#">Escalada en Hielo</a></li>
+                    <li><a href="#">Travesía Invernal</a></li>
                 </ul>
             </div>
+
+            <!-- Col 3: empresa -->
             <div class="footer__col">
-                <h4>Escuela</h4>
+                <h4>Empresa</h4>
                 <ul>
-                    <li><a href="#">Primeros Auxilios WFR</a></li>
-                    <li><a href="#">Rescate en Grietas</a></li>
-                    <li><a href="#">Escuela de Guías</a></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Política de cancelación</a></li>
+                    <li><a href="#">Certificaciones</a></li>
                 </ul>
             </div>
-            <div class="footer__col">
-                <h4>Seguridad</h4>
+
+            <!-- Col 4: contacto con íconos -->
+            <div class="footer__col footer__col--contact">
+                <h4>Contacto</h4>
                 <ul>
-                    <li><a href="#">Protocolo Satelital</a></li>
-                    <li><a href="#">Evacuación Médica</a></li>
-                    <li><a href="#">Seguros de Altura</a></li>
+                    <li>
+                        <span class="footer__contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                                <circle cx="12" cy="9" r="2.5"/>
+                            </svg>
+                        </span>
+                        Santa Cruz, Argentina
+                    </li>
+                    <li>
+                        <span class="footer__contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 3.07 4.18 2 2 0 0 1 5.06 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L9.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </span>
+                        +54 9 296 612 3456
+                    </li>
+                    <li>
+                        <span class="footer__contact-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                                <polyline points="2,4 12,13 22,4"/>
+                            </svg>
+                        </span>
+                        info@cuspidesexpediciones.com
+                    </li>
                 </ul>
             </div>
-            <div class="footer__col">
-                <h4>Comunidad</h4>
-                <ul>
-                    <li><a href="#">Testimonios</a></li>
-                    <li><a href="#">Preguntas Frecuentes</a></li>
-                    <li><a href="#">Prensa Kit</a></li>
-                </ul>
-            </div>
+
         </div>
 
-        <div class="footer__socials">
-            <a href="#" class="social-icon">🔗 LinkedIn</a>
-            <a href="#" class="social-icon">📸 Instagram</a>
-            <a href="#" class="social-icon">❌ X (Twitter)</a>
-        </div>
-
+        <!-- Barra inferior -->
         <div class="footer__bottom">
-            <p>© 2026 Cúspides Montaña & Expediciones. Cátedra Belluccia FADU.</p>
-            <p><a href="#" class="footer__link">Cookies Policy</a></p>
+            <p>© 2026 CÚSPIDES. Todos los derechos reservados.</p>
+            <p>Diseñado para los que no tienen miedo.</p>
         </div>
     </footer>
 

@@ -141,9 +141,9 @@
 }
 .det-phase:first-child { border-top: 1px solid var(--line); }
 .det-phase__code {
-    font-family: var(--font-mono); font-size: 0.75rem;
-    color: var(--pink); letter-spacing: 0.1em;
-    padding-top: 0.2rem; display: block;
+    font-family: var(--font-mono); font-size: 1.35rem;
+    color: var(--sky); letter-spacing: 0.08em;
+    padding-top: 0.2rem; display: block; font-weight: 700;
 }
 .det-phase__title {
     font-family: var(--font-display); font-weight: 700;
